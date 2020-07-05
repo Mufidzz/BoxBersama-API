@@ -7,7 +7,7 @@ import (
 )
 
 func DBInit() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:@(127.0.0.1:3306)/box-bersama?parseTime=true&loc=Local")
+	db, err := gorm.Open("mysql", "or1:or112233-@(127.0.0.1:3306)/box-bersama?parseTime=true&loc=Local")
 
 	if err != nil {
 		panic(err)

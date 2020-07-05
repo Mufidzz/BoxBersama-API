@@ -112,7 +112,7 @@ func main() {
 		auth.GET("/:username/:password", inDB.AuthorizeUser)
 	}
 
-	err := router.Run(":8117")
+	err := router.Run(":8113")
 	if err != nil {
 		panic(err)
 	}
