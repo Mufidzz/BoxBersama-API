@@ -5,7 +5,7 @@ import "github.com/jinzhu/gorm"
 type Article struct {
 	gorm.Model
 	Title        string
-	Description  string
+	Description  string `gorm:"type:mediumtext"`
 	NeededAmount int64
 	//Association
 	ArticleImages []ArticleImage `gorm:"foreignkey:ArticleID;association_foreignkey:ID"`
